@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional e interactivo de Fernando J Zavala, Desarrollador Full Stack y Estudiante de Ingeniería de Software. Proyectos destacados, habilidades técnicas y sistema de diseño.">
+  <meta name="keywords" content="Portafolio Web, Desarrollador Software, HTML5, CSS3, JavaScript, Full Stack, Sistema de Diseño">
+  <meta name="author" content="Fernando J Zavala">
+  
+  <title>Fernando J Zavala | Portafolio Profesional & Estudiante de Software</title>
+  
+  <!-- Iconos e Hojas de Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVEGACIÓN PRINCIPAL
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#inicio" class="logo" aria-label="Ir al inicio del portafolio">
+        <span class="logo-accent">Fernando J</span> Zavala
+      </a>
+
+      <!-- Menú de Navegación Semántico -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#design-system" class="nav-link">Sistema de Diseño</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Selector de Tema Claro/Oscuro -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Cambiar modo claro u oscuro" title="Cambiar tema">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+        </button>
+
+        <!-- Botón Menú Hamburguesa para Móviles -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         SECCIÓN 1: INICIO / PRESENTACIÓN (HERO)
+         ========================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span>Disponible para pasantías y proyectos</span>
+          </div>
+
+          <p class="hero-greeting">¡Hola! Mi nombre es</p>
+          <h1 class="hero-title">Fernando J <span class="text-gradient">Zavala</span></h1>
+          <p class="hero-role">Estudiante de Ingeniería de Software & Desarrollador Full Stack</p>
+
+          <p class="hero-description">
+            Apasionado por construir aplicaciones web eficientes, escalables e interactivas. Me especializo en arquitectura limpia, diseño de interfaces modernas y resolución de problemas técnicos complejos.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">
+              <span>Ver Proyectos</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contacto" class="btn btn-secondary">
+              <span>Contactar</span>
+            </a>
+          </div>
+
+
+        </div>
+
+        <!-- Avatar Semántico con Figura -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <figure class="avatar-image-container">
+              <img src="assets/images/avatar.png" alt="Fotografía profesional de Fernando J Zavala" class="avatar-img">
+              <figcaption class="sr-only">Foto de perfil profesional de Fernando J Zavala</figcaption>
+            </figure>
+            
+            <div class="experience-badge">
+              <span class="exp-text">Ing. en Software</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 2: SOBRE MÍ
+         ========================================================================== -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Conóceme</span>
+          <h2 class="section-title">Sobre <span class="text-gradient">Mí</span></h2>
+          <p class="section-subtitle">Información académica, perfil profesional y mi enfoque en el desarrollo de software</p>
+        </header>
+
+        <div class="about-grid">
+          
+          <!-- Artículo Semántico de Biografía -->
+          <article class="card about-bio-article">
+            <h3>Perfil Profesional</h3>
+            <p>
+              Soy estudiante de la carrera de Ingeniería de Software. Mi objetivo principal es combinar el rigor de la ingeniería informática con principios sólidos de experiencia de usuario (UX) e interfaces modernas.
+            </p>
+            <p>
+              Me destaco por mi capacidad de aprendizaje autodidacta, adaptabilidad a nuevos frameworks y apasionamiento por la escritura de código limpio y bien estructurado (Código Limpio / Clean Code).
+            </p>
+
+            <div class="academic-highlights">
+              <div class="highlight-box">
+                <h4 class="highlight-title">Formación Universitaria</h4>
+                <p class="highlight-desc">Ingeniería en Ciencias de la Computación / Software</p>
+              </div>
+              <div class="highlight-box">
+                <h4 class="highlight-title">Enfoque Principal</h4>
+                <p class="highlight-desc">Desarrollo Web Full Stack & Sistemas Distribuidos</p>
+              </div>
+              <div class="highlight-box">
+                <h4 class="highlight-title">Principios</h4>
+                <p class="highlight-desc">HTML Semántico, Accesibilidad Web, Rendimiento</p>
+              </div>
+              <div class="highlight-box">
+                <h4 class="highlight-title">Idiomas</h4>
+                <p class="highlight-desc">Español (Nativo) | Inglés B2 (Técnico)</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Aside Semántico de Trayectoria -->
+          <aside class="about-timeline-aside">
+            <h3 class="timeline-title">Trayectoria Académica</h3>
+            
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-year">2023 - Presente</span>
+                <h4 class="timeline-role">Estudiante Avanzado de Ing. Software</h4>
+                <p class="timeline-institution">Proyectos de Estructuras de Datos, Arquitectura Web y Bases de Datos</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-year">2024</span>
+                <h4 class="timeline-role">Desarrollador de Proyectos Académicos</h4>
+                <p class="timeline-institution">Construcción de paneles de analítica y herramientas de consola interactivas</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <span class="timeline-year">2025</span>
+                <h4 class="timeline-role">Certificación en Desarrollo Frontend & UI</h4>
+                <p class="timeline-institution">Especialización en Variables CSS, JavaScript Moderno y Accesibilidad</p>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 3: HABILIDADES TÉCNICAS (SKILLS)
+         ========================================================================== -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Competencias</span>
+          <h2 class="section-title">Habilidades <span class="text-gradient">Técnicas</span></h2>
+          <p class="section-subtitle">Tecnologías y herramientas que domino en el ciclo de desarrollo de software</p>
+        </header>
+
+        <!-- Filtro Interactivo de Habilidades por Categoría -->
+        <nav class="skills-filter-nav" aria-label="Filtrar habilidades por categoría">
+          <button class="filter-btn active" data-skill-filter="all">Todas</button>
+          <button class="filter-btn" data-skill-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-skill-filter="backend">Backend</button>
+          <button class="filter-btn" data-skill-filter="database">Bases de Datos</button>
+          <button class="filter-btn" data-skill-filter="tools">Herramientas & Nube</button>
+        </nav>
+
+        <!-- Grilla de Habilidades -->
+        <div class="skills-grid" id="skills-container">
+          
+          <!-- Skill Card 1: HTML5 & CSS3 -->
+          <article class="card skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-info">
+                <div>
+                  <h3 class="skill-name">HTML5 & CSS3</h3>
+                  <span class="skill-category-tag">Frontend</span>
+                </div>
+              </div>
+              <span class="skill-level-percent">95%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 95%;"></div>
+            </div>
+            <p class="skill-desc">Maquetación semántica, Flexbox, Grid, Variables CSS, Diseño Adaptativo y Animaciones.</p>
+          </article>
+
+          <!-- Skill Card 2: JavaScript ES6+ -->
+          <article class="card skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-info">
+                <div>
+                  <h3 class="skill-name">JavaScript ES6+</h3>
+                  <span class="skill-category-tag">Frontend</span>
+                </div>
+              </div>
+              <span class="skill-level-percent">90%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Manipulación del DOM, Funciones Asíncronas (Async/Await), Promesas, Fetch API y Módulos.</p>
+          </article>
+
+          <!-- Skill Card 3: Node.js & Express -->
+          <article class="card skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-info">
+                <div>
+                  <h3 class="skill-name">Node.js & Express</h3>
+                  <span class="skill-category-tag">Backend</span>
+                </div>
+              </div>
+              <span class="skill-level-percent">82%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 82%;"></div>
+            </div>
+            <p class="skill-desc">Creación de APIs RESTful, Middleware de autenticación JWT y manejo de controladores.</p>
+          </article>
+
+          <!-- Skill Card 4: PostgreSQL & SQL -->
+          <article class="card skill-card" data-category="database">
+            <div class="skill-header">
+              <div class="skill-info">
+                <div>
+                  <h3 class="skill-name">PostgreSQL & SQL</h3>
+                  <span class="skill-category-tag">Bases de Datos</span>
+                </div>
+              </div>
+              <span class="skill-level-percent">85%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">Diseño de esquemas relacionales, Consultas de Unión (Joins), indexación y optimización.</p>
+          </article>
+
+          <!-- Skill Card 5: Git & GitHub -->
+          <article class="card skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-info">
+                <div>
+                  <h3 class="skill-name">Git & GitHub</h3>
+                  <span class="skill-category-tag">Herramientas</span>
+                </div>
+              </div>
+              <span class="skill-level-percent">88%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+            <p class="skill-desc">Control de versiones, flujo GitFlow, Solicitudes de Extracción (Pull Requests) y trabajo colaborativo.</p>
+          </article>
+
+          <!-- Skill Card 6: React.js -->
+          <article class="card skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-info">
+                <div>
+                  <h3 class="skill-name">React.js</h3>
+                  <span class="skill-category-tag">Frontend</span>
+                </div>
+              </div>
+              <span class="skill-level-percent">78%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 78%;"></div>
+            </div>
+            <p class="skill-desc">Componentes funcionales, Hooks (useState, useEffect), JSX y consumo de servicios web.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 4: PROYECTOS DESTACADOS
+         ========================================================================== -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Portafolio</span>
+          <h2 class="section-title">Proyectos <span class="text-gradient">Destacados</span></h2>
+          <p class="section-subtitle">Demostración práctica de proyectos académicos y personales desarrollados</p>
+        </header>
+
+        <!-- Filtro Interactivo de Proyectos -->
+        <nav class="projects-filter-nav" aria-label="Filtrar proyectos por categoría">
+          <button class="filter-btn active" data-project-filter="all">Todos los Proyectos</button>
+          <button class="filter-btn" data-project-filter="web">Aplicaciones Web</button>
+          <button class="filter-btn" data-project-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-project-filter="tools">Herramientas</button>
+        </nav>
+
+        <!-- Grilla de Tarjetas de Proyecto (Componente Reutilizable Card) -->
+        <div class="projects-grid" id="projects-container">
+          
+          <!-- Proyecto 1: EcoTrack -->
+          <article class="card project-card" data-project-category="web">
+            <div class="project-image-wrapper">
+              <img src="assets/images/project-ecotrack.png" alt="Captura de la plataforma EcoTrack Analítica" class="project-img">
+              <span class="badge badge-primary project-category-badge">Analítica Web</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">EcoTrack - Analítica Sustentable</h3>
+              <p class="project-problem"><strong>Problema resuelto:</strong> Visualización accesible de huella de carbono y consumo energético para hogares sostenibles.</p>
+              <p class="project-desc">Plataforma interactiva que procesa datos de consumo en tiempo real mediante gráficos dinámicos y reportes de eficiencia.</p>
+              
+              <div class="project-tech-tags">
+                <span class="badge">JavaScript ES6</span>
+                <span class="badge">Variables CSS</span>
+                <span class="badge">Chart.js</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" 
+                        data-title="EcoTrack - Panel de Analítica Sustentable"
+                        data-desc="EcoTrack es una plataforma diseñada para centralizar y visualizar las métricas energéticas de instalaciones y hogares ecológicos. Permite comparar reducciones de emisión de CO2 mes a mes."
+                        data-problem="Falta de herramientas intuitivas para que usuarios no técnicos comprendan sus hábitos de consumo eléctrico y gas."
+                        data-tech="HTML5 Semántico, CSS Grid, JavaScript Asíncrono, Chart.js, Almacenamiento Local"
+                        data-img="assets/images/project-ecotrack.png"
+                        data-repo="https://github.com/fernandozavala/ecotrack-dashboard"
+                        data-demo="https://ecotrack-demo.example.com">
+                  Ver Detalles
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Repositorio de EcoTrack en GitHub">Repo ↗</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: DevFlow -->
+          <article class="card project-card" data-project-category="fullstack">
+            <div class="project-image-wrapper">
+              <img src="assets/images/project-devflow.png" alt="Captura de la aplicación DevFlow Kanban" class="project-img">
+              <span class="badge badge-secondary project-category-badge">Full Stack</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">DevFlow - Gestor Kanban</h3>
+              <p class="project-problem"><strong>Problema resuelto:</strong> Organización agilizada de sprint backlog para equipos estudiantiles de software.</p>
+              <p class="project-desc">Herramienta de gestión de tareas estilo Kanban con funcionalidad de arrastrar y soltar (Drag & Drop), etiquetas y persistencia.</p>
+              
+              <div class="project-tech-tags">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">JavaScript Vanilla</span>
+                <span class="badge">PostgreSQL</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" 
+                        data-title="DevFlow - Sistema Kanban de Gestión de Tareas"
+                        data-desc="DevFlow proporciona un tablero interactivo con columnas personalizables para clasificar tareas en Pendiente, En Progreso y Completado. Incluye filtros rápidos por prioridad."
+                        data-problem="Herramientas tradicionales complejas para equipos pequeños que requieren una solución ágil y liviana."
+                        data-tech="Node.js, Express REST API, PostgreSQL, Variables CSS, API Nativa de Arrastrar y Soltar"
+                        data-img="assets/images/project-devflow.png"
+                        data-repo="https://github.com/fernandozavala/devflow-kanban"
+                        data-demo="https://devflow-demo.example.com">
+                  Ver Detalles
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Repositorio de DevFlow en GitHub">Repo ↗</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: AlgoViz -->
+          <article class="card project-card" data-project-category="tools">
+            <div class="project-image-wrapper">
+              <img src="assets/images/project-algoviz.png" alt="Captura del visualizador de algoritmos AlgoViz" class="project-img">
+              <span class="badge badge-primary project-category-badge">Herramienta Educativa</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">AlgoViz - Visualizador de Algoritmos</h3>
+              <p class="project-problem"><strong>Problema resuelto:</strong> Dificultad para comprender la complejidad temporal de algoritmos de ordenamiento.</p>
+              <p class="project-desc">Simulador educativo interactivo que anima paso a paso algoritmos como Quicksort, Mergesort y Búsqueda Binaria.</p>
+              
+              <div class="project-tech-tags">
+                <span class="badge">JavaScript Canvas</span>
+                <span class="badge">HTML5</span>
+                <span class="badge">Animaciones CSS</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" 
+                        data-title="AlgoViz - Visualizador Interactivo de Algoritmos"
+                        data-desc="AlgoViz permite a estudiantes de sistemas ajustar la velocidad de ejecución y tamaño de arreglos para observar la permutación de valores en tiempo real."
+                        data-problem="Falta de representación gráfica clara sobre el comportamiento interno de los algoritmos de ordenamiento."
+                        data-tech="HTML5 Canvas API, Animaciones CSS3 Keyframes, Funciones Generadoras en JavaScript ES6"
+                        data-img="assets/images/project-algoviz.png"
+                        data-repo="https://github.com/fernandozavala/algoviz-visualizer"
+                        data-demo="https://algoviz-demo.example.com">
+                  Ver Detalles
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Repositorio de AlgoViz en GitHub">Repo ↗</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: CodePulse -->
+          <article class="card project-card" data-project-category="web">
+            <div class="project-image-wrapper">
+              <img src="assets/images/project-codepulse.png" alt="Captura del monitor de APIs CodePulse" class="project-img">
+              <span class="badge badge-secondary project-category-badge">Monitoreo de APIs</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">CodePulse - Monitor de APIs</h3>
+              <p class="project-problem"><strong>Problema resuelto:</strong> Monitoreo de latencia y disponibilidad para microservicios web.</p>
+              <p class="project-desc">Panel ligero para probar endpoints HTTP, verificar códigos de estado y alertar tiempos de respuesta elevados.</p>
+              
+              <div class="project-tech-tags">
+                <span class="badge">Fetch API</span>
+                <span class="badge">Interfaz Glassmorphism</span>
+                <span class="badge">Almacenamiento Local</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" 
+                        data-title="CodePulse - Monitor de APIs en Tiempo Real"
+                        data-desc="CodePulse realiza peticiones periódicas a URLs configuradas por el usuario y genera estadísticas de tiempo de respuesta y errores 4xx/5xx."
+                        data-problem="Falta de herramientas directas en navegador sin requerir servidores externos complejos."
+                        data-tech="Peticiones Asíncronas Fetch en JavaScript, IndexedDB, Interfaz Glassmorphism"
+                        data-img="assets/images/project-codepulse.png"
+                        data-repo="https://github.com/fernandozavala/codepulse-monitor"
+                        data-demo="https://codepulse-demo.example.com">
+                  Ver Detalles
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Repositorio de CodePulse en GitHub">Repo ↗</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+<!-- ==========================================================================
+     SECCIÓN 5: DESIGN SYSTEM / COMPONENTES
+     ========================================================================== -->
+<section class="section" id="design-system">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-tag">Documentación Visual</span>
+      <h2 class="section-title">Sistema de <span class="text-gradient">Diseño</span></h2>
+      <p class="section-subtitle">Muestra viva de tokens de diseño, colores, tipografía y componentes reutilizables</p>
+    </header>
+
+    <div class="ds-wrapper">
+      <!-- Paleta de Colores -->
+      <article class="ds-block">
+        <div class="ds-block-header">
+          <h3 class="ds-block-title">🎨 Paleta de Colores (Haz clic para copiar HEX)</h3>
+        </div>
+        <div class="ds-palette-grid">
+          <div class="ds-swatch" data-copy-hex="#3B82F6">
+            <div class="ds-swatch-color" style="background-color: var(--color-primary);"></div>
+            <div class="ds-swatch-info">
+              <span class="ds-swatch-name">Primario</span>
+              <span class="ds-swatch-var">--color-primary</span>
+              <span class="ds-swatch-hex">#3B82F6</span>
+            </div>
+          </div>
+          <div class="ds-swatch" data-copy-hex="#8B5CF6">
+            <div class="ds-swatch-color" style="background-color: var(--color-secondary);"></div>
+            <div class="ds-swatch-info">
+              <span class="ds-swatch-name">Secundario</span>
+              <span class="ds-swatch-var">--color-secondary</span>
+              <span class="ds-swatch-hex">#8B5CF6</span>
+            </div>
+          </div>
+          <div class="ds-swatch" data-copy-hex="#06B6D4">
+            <div class="ds-swatch-color" style="background-color: var(--color-accent);"></div>
+            <div class="ds-swatch-info">
+              <span class="ds-swatch-name">Acento</span>
+              <span class="ds-swatch-var">--color-accent</span>
+              <span class="ds-swatch-hex">#06B6D4</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Muestra de Componentes Reutilizables -->
+      <article class="ds-block">
+        <div class="ds-block-header">
+          <h3 class="ds-block-title">🧩 Componentes Reutilizables</h3>
+        </div>
+        <div class="ds-components-grid">
+          <div class="ds-comp-box">
+            <span class="ds-comp-label">Botones</span>
+            <div class="ds-comp-preview">
+              <button class="btn btn-primary">Primario</button>
+              <button class="btn btn-secondary">Secundario</button>
+              <button class="btn btn-outline">Outline</button>
+            </div>
+          </div>
+          <div class="ds-comp-box">
+            <span class="ds-comp-label">Badges / Etiquetas</span>
+            <div class="ds-comp-preview">
+              <span class="badge badge-primary">Primary Tag</span>
+              <span class="badge badge-secondary">Secondary Tag</span>
+              <span class="badge">Default Badge</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+    <!-- ==========================================================================
+         SECCIÓN 6: CONTACTO
+         ========================================================================== -->
+    <section class="section" id="contacto">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Conectemos</span>
+          <h2 class="section-title">Información de <span class="text-gradient">Contacto</span></h2>
+          <p class="section-subtitle">¿Tienes un proyecto, pasantía o consulta académica? Envíame un mensaje directo.</p>
+        </header>
+
+        <div class="contact-grid">
+          
+          <!-- Tarjeta de Detalles de Contacto -->
+          <article class="card contact-info-card">
+            <h3>Medios Directos</h3>
+            <p>Estoy disponible para colaborar en proyectos de código abierto, oportunidades laborales y desarrollo web profesional.</p>
+
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-title">Correo Electrónico</span>
+                <div class="contact-detail-value">fernando.zavala.dev@example.com</div>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-title">Ubicación Académica</span>
+                <div class="contact-detail-value">Milagro / Ecuador</div>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-title">Estado Profesional</span>
+                <div class="contact-detail-value">Buscando Pasantías & Proyectos Freelance</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Formulario de Contacto Semántico -->
+          <article class="card">
+            <form id="contact-form" class="contact-form" novalidate aria-label="Formulario de contacto profesional">
+              
+              <div class="form-group" id="group-name">
+                <label for="contact-name" class="form-label">Nombre Completo *</label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="Ej. Juan Pérez" required>
+                <span class="form-error-msg">Por favor ingresa tu nombre completo (mínimo 3 caracteres).</span>
+              </div>
+
+              <div class="form-group" id="group-email">
+                <label for="contact-email" class="form-label">Correo Electrónico *</label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="ejemplo@correo.com" required>
+                <span class="form-error-msg">Por favor ingresa una dirección de correo válida.</span>
+              </div>
+
+              <div class="form-group" id="group-subject">
+                <label for="contact-subject" class="form-label">Asunto / Motivo *</label>
+                <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Propuesta de proyecto o pasantía" required>
+                <span class="form-error-msg">Ingresa el asunto del mensaje.</span>
+              </div>
+
+              <div class="form-group" id="group-message">
+                <label for="contact-message" class="form-label">Mensaje *</label>
+                <textarea id="contact-message" name="message" class="form-control" placeholder="Escribe los detalles de tu consulta aquí..." required></textarea>
+                <span class="form-error-msg">El mensaje no puede estar vacío (mínimo 10 caracteres).</span>
+              </div>
+
+              <div id="form-alert-container"></div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Enviar Mensaje</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </form>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       MODAL DE DETALLES DE PROYECTO (INTERACTIVO VIA JS)
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close" aria-label="Cerrar ventana emergente">&times;</button>
+      <img src="" alt="Captura extendida del proyecto" id="modal-project-img" class="modal-img">
+      <h3 id="modal-project-title" class="modal-title">Título del Proyecto</h3>
+      <p id="modal-project-desc">Descripción del proyecto...</p>
+      
+      <h4 class="modal-section-title">Problema o Necesidad Resuelta:</h4>
+      <p id="modal-project-problem" style="color: var(--color-text-muted);"></p>
+
+      <h4 class="modal-section-title">Tecnologías Utilizadas:</h4>
+      <p id="modal-project-tech" style="font-family: var(--font-mono); color: var(--color-primary);"></p>
+
+      <div style="display: flex; gap: var(--space-md); margin-top: var(--space-lg);">
+        <a id="modal-repo-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Ver Repositorio ↗</a>
+        <a id="modal-demo-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Ver Proyecto Desplegado</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor para Notificaciones Toast -->
+  <div id="toast-container"></div>
+
+  <!-- Botón Volver al Inicio (Back to Top) -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Volver arriba en la página" title="Volver arriba">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-accent">Fernando J</span> Zavala
+      </a>
+
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de GitHub">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de LinkedIn">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2026 Fernando J Zavala. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script de Interactividad JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
