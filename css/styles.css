@@ -603,8 +603,9 @@ ul, ol {
 
 .hero-quick-tech {
   display: flex;
-  align-items: center;
-  gap: var(--space-md);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
   padding-top: var(--space-lg);
   border-top: 1px solid var(--color-border);
   width: 100%;
@@ -614,13 +615,24 @@ ul, ol {
   font-size: var(--font-xs);
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--color-text-light);
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
 }
 
 .quick-tech-tags {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs);
+}
+
+.badge-mono {
+  font-family: var(--font-mono);
+  font-size: var(--font-xs);
+  padding: 0.4rem 0.85rem;
+  background: var(--color-primary-light);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
 }
 
 /* Avatar del Estudiante */
@@ -1631,5 +1643,63 @@ textarea.form-control {
 
   .ds-components-grid {
     grid-template-columns: 1fr;
+  }
+}
+/* --- Sección Escala de Espaciados --- */
+.spacing-section {
+  padding: 3rem 0;
+}
+
+.spacing-card {
+  background-color: #0b111e;
+  border-radius: 12px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.spacing-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 60px;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.spacing-var {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.spacing-track {
+  background-color: #111a2e;
+  border-radius: 6px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.spacing-bar {
+  height: 14px;
+  background-color: #ff2a5f;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 42, 95, 0.4);
+}
+
+.spacing-val {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: #94a3b8;
+  text-align: right;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+  .spacing-row {
+    grid-template-columns: 110px 1fr 45px;
+    gap: 0.75rem;
   }
 }
