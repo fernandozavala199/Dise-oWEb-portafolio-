@@ -108,64 +108,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* --------------------------------------------------------------------------
-     5. MODAL DE DETALLES DE PROYECTO
-     -------------------------------------------------------------------------- */
-  const projectModal = document.getElementById('project-modal');
-  const modalCloseBtn = document.getElementById('modal-close');
-  const openModalBtns = document.querySelectorAll('.open-modal-btn');
+/* ==========================================================================
+   5. MODAL DE DETALLES DE PROYECTO
+   ========================================================================== */
 
-  // Elementos internos del modal
-  const modalImg = document.getElementById('modal-project-img');
-  const modalTitle = document.getElementById('modal-project-title');
-  const modalDesc = document.getElementById('modal-project-desc');
-  const modalProblem = document.getElementById('modal-project-problem');
-  const modalTech = document.getElementById('modal-project-tech');
-  const modalRepo = document.getElementById('modal-repo-link');
-  const modalDemo = document.getElementById('modal-demo-link');
+const projectModal = document.getElementById('project-modal');
+const modalCloseBtn = document.getElementById('modal-close');
+const openModalBtns = document.querySelectorAll('.open-modal-btn');
 
-  openModalBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const data = btn.dataset;
+// Elementos internos del modal
+const modalImg = document.getElementById('modal-project-img');
+const modalTitle = document.getElementById('modal-project-title');
+const modalDesc = document.getElementById('modal-project-desc');
+const modalProblem = document.getElementById('modal-project-problem');
+const modalTech = document.getElementById('modal-project-tech');
+const modalRepo = document.getElementById('modal-repo-link');
+const modalDemo = document.getElementById('modal-demo-link');
 
-      if (modalImg) modalImg.src = data.img || '';
-      if (modalTitle) modalTitle.textContent = data.title || 'Proyecto';
-      if (modalDesc) modalDesc.textContent = data.desc || '';
-      if (modalProblem) modalProblem.textContent = data.problem || '';
-      if (modalTech) modalTech.textContent = data.tech || '';
-      if (modalRepo) modalRepo.href = data.repo || '#';
-      if (modalDemo) modalDemo.href = data.demo || '#';
+openModalBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const data = btn.dataset;
 
+    if (modalImg) modalImg.src = data.img || '';
+    if (modalTitle) modalTitle.textContent = data.title || '';
+    if (modalDesc) modalDesc.textContent = data.desc || '';
+    if (modalProblem) modalProblem.textContent = data.problem || '';
+    if (modalTech) modalTech.textContent = data.tech || '';
+    if (modalRepo) modalRepo.href = data.repo || '#';
+    
+    // Asigna el enlace de Netlify que está en data-demo del HTML
+    if (modalDemo) modalDemo.href = data.demo || '#';
+
+    if (projectModal) {
       projectModal.classList.add('active');
       projectModal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden'; // Evitar scroll de fondo
-    });
+    }
   });
+});
 
-  function closeModal() {
+// Cerrar modal al hacer clic en la X
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener('click', () => {
     if (projectModal) {
       projectModal.classList.remove('active');
       projectModal.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-  }
-
-  if (modalCloseBtn) {
-    modalCloseBtn.addEventListener('click', closeModal);
-  }
-
-  if (projectModal) {
-    projectModal.addEventListener('click', (e) => {
-      if (e.target === projectModal) closeModal();
-    });
-  }
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && projectModal && projectModal.classList.contains('active')) {
-      closeModal();
     }
   });
-
+}
   /* --------------------------------------------------------------------------
      6. VALIDACIÓN DEL FORMULARIO DE CONTACTO
      -------------------------------------------------------------------------- */
